@@ -13,6 +13,11 @@ to the underlying Metalsmith instance, but return the stream instead of the
 Metalsmith instance.  (Calling ``.metadata()`` with no arguments returns the
 metadata, however.)
 
+
+        stream.source = (dir) ->
+            smith.source(dir)
+            return this
+
         stream.use = (plugin) ->
             smith.use(plugin)
             return this
