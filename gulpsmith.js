@@ -9,8 +9,8 @@
       dir = process.cwd();
     }
     stream = gulp_stream(smith = require("metalsmith")(dir));
-    stream.source = function(dir) {
-      smith.source(dir);
+    stream.src = function(sourceDir) {
+      smith.source(sourceDir);
       return this;
     };
     stream.use = function(plugin) {

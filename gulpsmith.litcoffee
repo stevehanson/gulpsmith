@@ -14,8 +14,8 @@ Metalsmith instance.  (Calling ``.metadata()`` with no arguments returns the
 metadata, however.)
 
 
-        stream.source = (dir) ->
-            smith.source(dir)
+        stream.src = (sourceDir) ->
+            smith.source(sourceDir)
             return this
 
         stream.use = (plugin) ->
